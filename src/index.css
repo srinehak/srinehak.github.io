@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: Inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    @apply bg-[#060B14];
+  }
+
+  body {
+    @apply bg-[#060B14] text-white min-h-screen overflow-x-hidden;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg transition-all duration-200 font-semibold;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:bg-accent/90 text-white;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .hero-section {
+    @apply relative overflow-hidden;
+    transform-style: preserve-3d;
+    background-size: 30px 30px;
+    background-image: 
+      radial-gradient(rgba(0, 163, 255, 0.1) 1px, transparent 1px),
+      radial-gradient(rgba(248, 250, 252, 0.05) 1px, transparent 1px);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  .card {
+    @apply bg-secondary/50 backdrop-blur-sm border border-accent/10 rounded-xl p-6;
+    transform-style: preserve-3d;
+  }
+
+  .sphere-container {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+}
