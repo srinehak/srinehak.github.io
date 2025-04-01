@@ -6,7 +6,13 @@ export default defineConfig({
   server: {
     port: 5173,
     strictPort: true,
-    open: true
+    open: true,
+    // Handle client-side routing
+    historyApiFallback: true
   },
-  base: '/srinehak.github.io/',
+  preview: {
+    // Handle client-side routing in preview mode
+    historyApiFallback: true
+  },
+  base: '/'
 });
