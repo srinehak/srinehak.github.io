@@ -94,7 +94,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16 md:gap-24 mt-16">
+                <div className="flex justify-center mt-16">
                   <motion.button
                     onClick={() => navigate('/contact')}
                     whileHover={{ scale: 1.02 }}
@@ -102,14 +102,6 @@ export default function Home() {
                     className="btn bg-[#0A1628] hover:bg-[#1A2638] text-white text-lg sm:text-xl px-8 py-4 rounded-lg font-medium min-w-[250px] border border-[#1E293B]"
                   >
                     Hire AI Specialists Now
-                  </motion.button>
-                  <motion.button
-                    onClick={() => navigate('/technology')}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="btn bg-transparent hover:bg-white/5 text-white text-lg sm:text-xl px-8 py-4 rounded-lg font-medium min-w-[250px] border border-[#1E293B]"
-                  >
-                    Learn More
                   </motion.button>
                 </div>
               </motion.div>

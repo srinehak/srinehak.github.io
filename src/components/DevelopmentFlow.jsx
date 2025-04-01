@@ -110,7 +110,7 @@ const StepCard = ({ step, index }) => {
 };
 
 const GlowingDot = () => (
-  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#3B82F6] shadow-lg shadow-[#3B82F6]/50 z-20">
+  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#3B82F6] shadow-lg shadow-[#3B82F6]/50 z-20">
     {/* Pulsing effect */}
     <div className="absolute inset-0 animate-ping rounded-full bg-[#3B82F6] opacity-25" />
     {/* Inner glow */}
@@ -119,7 +119,7 @@ const GlowingDot = () => (
 );
 
 const FlowLine = () => (
-  <div className="absolute left-1/2 transform -translate-x-1/2 h-[calc(100%+2rem)] w-[2px] top-0 -z-10">
+  <div className="absolute left-1/2 transform -translate-x-1/2 h-[calc(100%+6rem)] w-[2px] -top-16 -z-10">
     {/* Gradient line with fixed positioning */}
     <div className="absolute w-[2px] h-full bg-gradient-to-b from-[#3B82F6] via-[#6366F1] to-[#8B5CF6] rounded-full opacity-50" />
     {/* Top dot */}
