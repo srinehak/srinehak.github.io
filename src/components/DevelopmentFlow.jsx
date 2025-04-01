@@ -74,7 +74,7 @@ const StepCard = ({ step, index }) => {
           width: '4rem'
         }}
       />
-      <div className="relative z-10 p-6 group-hover:translate-y-[-4px] transition-all duration-300">
+      <div className="relative z-10 p-6 group-hover:translate-y-[-4px] transition-all duration-300 bg-[#060B14]/80 backdrop-blur-sm rounded-xl border border-[#3B82F6]/10">
         <div className="flex items-start gap-6">
           <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#3B82F6]/10 to-[#3B82F6]/5 p-[1px] relative group-hover:shadow-lg group-hover:shadow-[#3B82F6]/20 transition-all duration-300">
             <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#3B82F6]/20 to-[#3B82F6]/10 blur-xl group-hover:blur-2xl transition-all duration-300 opacity-75" />
@@ -119,9 +119,9 @@ const GlowingDot = () => (
 );
 
 const FlowLine = () => (
-  <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[2px]">
-    {/* Gradient line */}
-    <div className="w-full h-full bg-gradient-to-b from-[#3B82F6] via-[#6366F1] to-[#8B5CF6] rounded-full" />
+  <div className="absolute left-1/2 transform -translate-x-1/2 h-[calc(100%+2rem)] w-[2px] top-0 -z-10">
+    {/* Gradient line with fixed positioning */}
+    <div className="absolute w-[2px] h-full bg-gradient-to-b from-[#3B82F6] via-[#6366F1] to-[#8B5CF6] rounded-full opacity-50" />
     {/* Top dot */}
     <GlowingDot />
     {/* Bottom dot */}

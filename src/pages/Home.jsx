@@ -61,8 +61,8 @@ export default function Home() {
                 </div>
                 
                 <div className="space-y-8 mb-12">
-                  <p className="text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-[#3B82F6] via-white to-[#3B82F6] text-transparent bg-clip-text max-w-4xl mx-auto">
-                    Hire expert AI developers from Inceptica to craft intelligent AI agents and AI solutions that deliver measurable business outcomes.
+                  <p className="text-lg bg-gradient-to-r from-[#3B82F6] via-white to-[#3B82F6] text-transparent bg-clip-text">
+                    Inceptica's AI experts build scalable, intelligent AI agents for your business.
                   </p>
                   <div className="relative max-w-4xl mx-auto">
                     <div className="flex justify-center gap-8 sm:gap-16 items-center text-lg sm:text-xl md:text-2xl">

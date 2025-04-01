@@ -8,5 +8,5 @@ export default defineConfig({
     strictPort: true,
     open: true
   },
-  base: '/',
+  base: '/srinehak.github.io/',
 });

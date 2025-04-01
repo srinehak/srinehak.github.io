@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import ParticlesBackground from '../components/Particles';
 import { LightBulbIcon, RocketLaunchIcon, UserGroupIcon, SparklesIcon } from '@heroicons/react/24/outline';
 
@@ -420,15 +421,15 @@ export default function About() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="inline-flex items-center px-8 py-4 text-base font-medium text-white bg-gradient-to-r from-[#3B82F6] to-[#60A5FA] hover:from-[#60A5FA] hover:to-[#3B82F6] rounded-lg transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
                 >
                   <span>Get in Touch</span>
                   <svg className="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
-                </a>
+                </Link>
               </motion.div>
             </div>
           </motion.div>
