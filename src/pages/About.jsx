@@ -34,21 +34,21 @@ const team = [
   {
     name: "Swarnalatha Duttaluri",
     role: "Founder",
-    description: "Strategic leader focused on building custom AI agents using LangChain and OpenAI, driving innovation to solve real-world business challenges through AI automation.",
+    description: "Business leader driving enterprise AI adoption at Inceptica, enabling organizations to solve real-world challenges and scale operations through intelligent, tailored automation solutions.",
     linkedin: "https://www.linkedin.com/in/swarna-latha-a2064062/",
     image: "/images/team/swarnalatha-duttaluri.jpg"
   },
   {
     name: "Neha Korugundla",
     role: "Co-Founder",
-    description: "Expert in data-driven product development and AI solutions, specializing in workflow automation and analytics to enhance decision-making and operational efficiency.",
+    description: "Strategic leader driving product innovation at Inceptica, enabling enterprises to align AI solutions with business goals to enhance efficiency, decision-making, and operational impact.",
     linkedin: "https://www.linkedin.com/in/srinehakorugundla/",
     image: "/images/team/neha-korugundla.jpeg"
   },
   {
     name: "Sri Arardhi",
     role: "Mentor & Advisor",
-    description: "Strategic technology advisor with deep expertise in enterprise software and AI implementation, guiding organizations through digital transformation.",
+    description: "Technology strategist guiding enterprise success at Inceptica, enabling organizations to accelerate AI adoption and drive digital transformation through scalable, impactful solutions.",
     linkedin: "https://www.linkedin.com/in/sriarardhi/",
     image: "/images/team/sri-arardhi.jpg"
   }
