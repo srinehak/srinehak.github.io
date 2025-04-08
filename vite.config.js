@@ -14,5 +14,18 @@ export default defineConfig({
     // Handle client-side routing in preview mode
     historyApiFallback: true
   },
-  base: '/'
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
+  },
+  base: '/',
+  resolve: {
+    alias: {
+      '@': '/src'
+    }
+  }
 });
