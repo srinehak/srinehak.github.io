@@ -6,22 +6,19 @@
     <title>The Inceptica</title>
     <meta name="description" content="Welcome to The Inceptica - Redirecting you to the right page">
     <script type="text/javascript">
-      // Handle SPA routing
-      (function() {
-        var path = window.location.pathname;
-        var cleanPath = path.replace(/\/+$/, ''); // Remove trailing slashes
-        
-        // List of valid routes
-        var validRoutes = ['/', '/services', '/technology', '/contact', '/about', '/case-studies', '/ai-possibilities'];
-        
-        if (validRoutes.includes(cleanPath)) {
-          // If it's a valid route, redirect to the same path
-          window.location.replace(cleanPath);
-        } else {
-          // If it's not a valid route, redirect to home
-          window.location.replace('/');
-        }
-      })();
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      var segmentCount = 0;
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
     </script>
   </head>
   <body>
