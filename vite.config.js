@@ -37,7 +37,7 @@ export default defineConfig({
     // Ensure clean URLs work
     copyPublicDir: true
   },
-  base: '/',
+  base: '',
   resolve: {
     alias: {
       '@': '/src'
