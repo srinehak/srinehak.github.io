@@ -1,3 +1,22 @@
+# Global rules
 User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
 Allow: /
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.gif
+Allow: /*.svg
+
+# Sitemap location
 Sitemap: https://theinceptica.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
