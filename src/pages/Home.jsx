@@ -3,10 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import ParticlesBackground from '../components/Particles';
 import Sphere3D from '../components/Sphere3D';
 import LLMLogos from '../components/LLMLogos';
+import SEO from '../components/SEO';
 
 export default function Home() {
   const navigate = useNavigate();
   return (
+    <>
+      <SEO
+        title="The Inceptica - On-Demand AI Experts & Custom AI Solutions"
+        description="Hire Inceptica's AI developers and architects to build scalable, intelligent AI agents for your business. Expert guidance in AI implementation and custom solutions."
+        name="The Inceptica"
+        type="website"
+      />
     <div className="min-h-screen bg-[#060B14]">
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -221,6 +229,7 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 

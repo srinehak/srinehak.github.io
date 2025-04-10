@@ -1,6 +1,7 @@
 import DevelopmentFlow from '../components/DevelopmentFlow';
 import ParticlesBackground from '../components/Particles';
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import {
   CpuChipIcon,
   ArrowPathIcon,
@@ -87,6 +88,13 @@ const Card = ({ title, description, Icon }) => (
 
 export default function Services() {
   return (
+    <>
+      <SEO
+        title="AI Services & Solutions - Custom AI Development | The Inceptica"
+        description="Transform your business with our enterprise AI solutions. From AI consulting and strategy to custom development and implementation. Expert guidance in building intelligent AI agents."
+        name="The Inceptica"
+        type="website"
+      />
     <div className="relative min-h-screen bg-[#060B14]">
       <div className="absolute inset-0">
         <ParticlesBackground />
@@ -187,5 +195,6 @@ export default function Services() {
       </div>
       <DevelopmentFlow />
     </div>
+    </>
   );
 }

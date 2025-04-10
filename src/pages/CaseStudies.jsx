@@ -5,6 +5,7 @@ import { Separator } from "../components/ui/separator";
 import { CheckCircle, Quote } from "lucide-react";
 import { motion } from "framer-motion";
 import ParticlesBackground from '../components/Particles';
+import SEO from '../components/SEO';
 
 export default function CaseStudies() {
   const caseStudies = [
@@ -71,7 +72,14 @@ export default function CaseStudies() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#060B14]">
+    <>
+      <SEO
+        title="AI Success Stories & Case Studies - Real Results | The Inceptica"
+        description="Read how our AI solutions transformed businesses across e-commerce, manufacturing, healthcare, and more. Real success stories with measurable results and client testimonials."
+        name="The Inceptica"
+        type="website"
+      />
+      <div className="min-h-screen bg-[#060B14]">
       <div className="absolute inset-0">
         <ParticlesBackground />
       </div>
@@ -158,5 +166,6 @@ export default function CaseStudies() {
         </div>
       </div>
     </div>
+    </>
   );
 }

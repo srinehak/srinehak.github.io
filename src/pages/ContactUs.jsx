@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import ParticlesBackground from '../components/Particles';
+import SEO from '../components/SEO';
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -77,7 +78,14 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen bg-[#060B14] pt-24 pb-20 relative">
+    <>
+      <SEO
+        title="Contact The Inceptica - Get in Touch for AI Solutions | The Inceptica"
+        description="Contact us to discuss your AI needs. Whether you're looking for custom AI development, consulting, or implementation services, we're here to help transform your business."
+        name="The Inceptica"
+        type="website"
+      />
+      <div className="min-h-screen bg-[#060B14] pt-24 pb-20 relative">
       <ParticlesBackground theme="about" />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
@@ -248,5 +256,6 @@ export default function ContactUs() {
         </div>
       </div>
     </div>
+    </>
   );
 }

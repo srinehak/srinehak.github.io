@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "The Inceptica",
+  "url": "https://theinceptica.com",
+  "logo": "https://theinceptica.com/Fav-png.png",
+  "description": "On-Demand AI Experts and Custom AI Solutions. We build scalable, intelligent AI agents for businesses.",
+  "sameAs": [],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "url": "https://theinceptica.com/contact"
+  },
+  "offers": {
+    "@type": "Offer",
+    "description": "AI Development and Consulting Services"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  }
+}

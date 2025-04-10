@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import ParticlesBackground from '../components/Particles';
 import Sphere3D from '../components/Sphere3D';
+import SEO from '../components/SEO';
 
 const technologies = {
   frameworks: {
@@ -316,6 +317,13 @@ const TechnologySection = ({ title, color, items }) => (
 
 export default function Technology() {
   return (
+    <>
+      <SEO
+        title="AI Technology Stack - Enterprise AI Tools & Infrastructure | The Inceptica"
+        description="Explore our comprehensive AI technology stack. From LangChain and OpenAI to vector databases and ML libraries, we leverage cutting-edge tools for enterprise AI solutions."
+        name="The Inceptica"
+        type="website"
+      />
     <div className="relative min-h-screen bg-[#060B14]">
       {/* Background effects */}
       <div className="absolute inset-0">
@@ -360,5 +368,6 @@ export default function Technology() {
         ))}
       </div>
     </div>
+    </>
   );
 }

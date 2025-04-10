@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 import ParticlesBackground from '../components/Particles';
+import SEO from '../components/SEO';
 
 const useCases = [
   {
@@ -78,7 +79,14 @@ const useCases = [
 
 export default function AIPossibilities() {
   return (
-    <div className="min-h-screen bg-black pt-32 pb-20 relative">
+    <>
+      <SEO
+        title="AI Use Cases & Success Stories - Real-World Applications | The Inceptica"
+        description="Explore real-world AI applications across industries. From content generation to predictive maintenance, discover how our AI solutions drive business transformation and efficiency."
+        name="The Inceptica"
+        type="website"
+      />
+      <div className="min-h-screen bg-black pt-32 pb-20 relative">
       <div className="absolute inset-0">
         <ParticlesBackground />
       </div>
@@ -218,5 +226,6 @@ export default function AIPossibilities() {
         </div>
       </div>
     </div>
+    </>
   );
 }

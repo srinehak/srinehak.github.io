@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ParticlesBackground from '../components/Particles';
 import { LightBulbIcon, RocketLaunchIcon, UserGroupIcon, SparklesIcon } from '@heroicons/react/24/outline';
+import SEO from '../components/SEO';
 
 const values = [
   {
@@ -74,6 +75,13 @@ const highlights = [
 
 export default function About() {
   return (
+    <>
+      <SEO
+        title="About The Inceptica - Our Team, Values & Mission in AI Development"
+        description="Meet the team behind The Inceptica. Learn about our values, mission, and commitment to developing ethical AI solutions that transform businesses."
+        name="The Inceptica"
+        type="website"
+      />
     <div className="relative min-h-screen bg-[#060B14] pt-24">
       <ParticlesBackground theme="about" />
       
@@ -438,5 +446,6 @@ export default function About() {
         </motion.div>
       </div>
     </div>
+    </>
   );
 }
