@@ -4,37 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Inceptica</title>
-    <meta name="description" content="Welcome to The Inceptica - Redirecting you to the right page">
+    <meta name="description" content="Welcome to The Inceptica - Your AI Solutions Partner">
     <script type="text/javascript">
-      // Handles routing for single page applications
-      (function() {
-        const path = window.location.pathname;
-        const search = window.location.search;
-        const hash = window.location.hash;
-        
-        // Remove any trailing slashes
-        const cleanPath = path.replace(/\/$/, '');
-        
-        // If we're not at the root, redirect to the root with the path in the query
-        if (cleanPath !== '') {
-          window.location.replace(
-            '/' + 
-            (cleanPath ? '?p=' + cleanPath.substring(1) : '') +
-            (search ? '&' + search.substring(1) : '') +
-            hash
-          );
-        } else {
-          // If we're at the root, just go to index
-          window.location.replace('/');
-        }
-      })();
+      window.location.replace('/');
     </script>
   </head>
   <body>
-    <noscript>
-      <h1>Page Not Found</h1>
-      <p>The page you're looking for might have been removed or is temporarily unavailable.</p>
-      <p><a href="/">Go to Homepage</a></p>
-    </noscript>
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for might have been removed or is temporarily unavailable.</p>
+    <p><a href="/">Go to Homepage</a></p>
   </body>
 </html>
