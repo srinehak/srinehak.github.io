@@ -5,6 +5,20 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/',
+  server: {
+    historyApiFallback: true,
+    port: 3000,
+    strictPort: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        secure: false,
+        ws: true,
+      }
+    }
+  },
   plugins: [
     react(),
     {
@@ -18,7 +32,7 @@ export default defineConfig({
         fs.copyFileSync(path.join(distDir, 'index.html'), path.join(distDir, '404.html'));
         
         // Copy other necessary files
-        const filesToCopy = ['robots.txt', 'sitemap.xml', 'sitemap.xsl', '_headers', '.htaccess'];
+        const filesToCopy = ['robots.txt', 'sitemap.xml', 'sitemap.xsl', '_headers', '.htaccess', '_redirects'];
         filesToCopy.forEach(file => {
           const sourcePath = path.join(publicDir, file);
           const targetPath = path.join(distDir, file);
@@ -29,17 +43,15 @@ export default defineConfig({
       }
     }
   ],
-  server: {
-    port: 5173,
-    strictPort: true,
-    open: true,
-    historyApiFallback: true
-  },
   preview: {
+    port: 3000,
+    strictPort: true,
     historyApiFallback: true
   },
   build: {
     outDir: 'dist',
+    sourcemap: true,
+    emptyOutDir: true,
     rollupOptions: {
       output: {
         manualChunks: undefined
@@ -49,10 +61,9 @@ export default defineConfig({
     // Ensure clean URLs work
     copyPublicDir: true
   },
-  base: '',
   resolve: {
     alias: {
-      '@': '/src'
-    }
+      '@': path.resolve(__dirname, './src'),
+    },
   }
 });

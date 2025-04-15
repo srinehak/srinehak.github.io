@@ -1,1 +1,8 @@
+# Redirect all routes to index.html with 200 status code
 /* /index.html 200
+
+# Force HTTPS
+http://* https://:splat 301!
+
+# Handle trailing slashes
+/*/ /:splat 301
