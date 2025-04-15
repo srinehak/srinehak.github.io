@@ -10,10 +10,22 @@ export default defineConfig({
     {
       name: 'handle-html-files',
       closeBundle: () => {
-        // Copy index.html to 404.html after build
-        const indexPath = path.resolve(__dirname, 'dist/index.html');
-        const notFoundPath = path.resolve(__dirname, 'dist/404.html');
-        fs.copyFileSync(indexPath, notFoundPath);
+        // Copy necessary files after build
+        const distDir = path.resolve(__dirname, 'dist');
+        const publicDir = path.resolve(__dirname, 'public');
+        
+        // Copy index.html to 404.html
+        fs.copyFileSync(path.join(distDir, 'index.html'), path.join(distDir, '404.html'));
+        
+        // Copy other necessary files
+        const filesToCopy = ['robots.txt', 'sitemap.xml', 'sitemap.xsl', '_headers', '.htaccess'];
+        filesToCopy.forEach(file => {
+          const sourcePath = path.join(publicDir, file);
+          const targetPath = path.join(distDir, file);
+          if (fs.existsSync(sourcePath)) {
+            fs.copyFileSync(sourcePath, targetPath);
+          }
+        });
       }
     }
   ],
