@@ -13,7 +13,7 @@ const values = [
   },
   {
     title: "Client Success",
-    description: "Your success is our success. We're committed to delivering intelligent agents that create measurable business value and transform operations.",
+    description: "Your success is our success. We're committed to delivering intelligent solutions that create measurable business value and transform operations.",
     icon: RocketLaunchIcon,
     color: "from-purple-500/20 to-purple-600/20"
   },
@@ -25,7 +25,7 @@ const values = [
   },
   {
     title: "Ethical AI",
-    description: "We develop AI agents with strong ethical principles, ensuring transparency, responsibility, and trustworthy decision-making capabilities.",
+    description: "We develop AI solutions with strong ethical principles, ensuring transparency, responsibility, and trustworthy decision-making capabilities.",
     icon: SparklesIcon,
     color: "from-cyan-500/20 to-cyan-600/20"
   }
@@ -58,12 +58,12 @@ const team = [
 const highlights = [
   {
     title: "Beyond Traditional Automation",
-    description: "Our intelligent agents understand context, make decisions, and take autonomous action to transform your operations and enhance decision-making.",
+    description: "Our intelligent solutions understand context, make decisions, and take autonomous action to transform your operations and enhance decision-making.",
     gradient: "from-blue-600/20 to-cyan-600/20"
   },
   {
     title: "Purpose-Built Solutions",
-    description: "We develop tailored AI agents that integrate deeply with your operations and adapt to your unique business context for lasting impact.",
+    description: "We develop tailored AI solutions that integrate deeply with your operations and adapt to your unique business context for lasting impact.",
     gradient: "from-indigo-600/20 to-blue-600/20"
   },
   {
@@ -99,7 +99,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }} 
             className="text-5xl font-bold text-white inline-block relative mb-6"
           >
-            Beyond AI Tools—Building Intelligent Agents
+            Beyond AI Tools—Building Intelligent Solutions
             <motion.div 
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
@@ -108,7 +108,7 @@ export default function About() {
             />
           </motion.h1>
           <p className="text-xl text-gray-300 mb-4">
-            We empower organizations to transcend traditional automation by building intelligent AI agents that understand context,
+            We empower organizations to transcend traditional automation by building intelligent AI solutions that understand context,
             make decisions, and take autonomous action—transforming operations and delivering measurable outcomes.
           </p>
         </motion.div>
@@ -145,7 +145,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="text-xl text-white/90 leading-relaxed font-medium text-center max-w-3xl mx-auto mb-24"
           >
-            To empower organizations to transcend traditional automation by building and deploying intelligent AI agents 
+            To empower organizations to transcend traditional automation by building and deploying intelligent AI solutions 
             that understand context, make decisions, and take autonomous action—transforming operations, enhancing 
             decision-making, and delivering measurable business outcomes.
           </motion.p>
@@ -228,14 +228,14 @@ export default function About() {
             <div className="space-y-6">
               <p className="text-white/90 leading-relaxed text-lg">
                 Inceptica was founded with a bold vision: to help organisations move beyond traditional automation and embrace 
-                a future powered by intelligent AI agents—autonomous systems that understand context, make decisions, and take action.
+                a future powered by intelligent AI solutions—autonomous systems that understand context, make decisions, and take action.
               </p>
               
               <p className="text-white/80 leading-relaxed">
                 Our founding team recognised an opportunity to rethink how AI is built and applied—shifting the focus from generic 
-                tools to intelligent agents that deliver real, lasting impact. While AI was advancing rapidly, many organisations 
+                tools to intelligent solutions that deliver real, lasting impact. While AI was advancing rapidly, many organisations 
                 were still struggling to apply it meaningfully. Tools were abundant, but what they truly needed were purpose-built 
-                agents that could integrate deeply into operations and drive measurable outcomes.
+                solutions that could integrate deeply into operations and drive measurable outcomes.
               </p>
             </div>
 
@@ -246,12 +246,12 @@ export default function About() {
             <div className="space-y-6">
               <p className="text-white/80 leading-relaxed">
                 We bring together a team of expert AI developers, solution architects, and domain specialists who design and deploy 
-                intelligent agents tailored to your needs. Whether it's enhancing decision-making, orchestrating complex workflows, 
-                or transforming user experiences, our agents are built to operate in real time, at scale, and in tune with your business.
+                intelligent solutions tailored to your needs. Whether it's enhancing decision-making, orchestrating complex workflows, 
+                or transforming user experiences, our solutions are built to operate in real time, at scale, and in tune with your business.
               </p>
 
               <p className="text-white/80 leading-relaxed">
-                At Inceptica, we believe AI agents aren't just a trend—they're the foundation of the next era of enterprise software. 
+                At Inceptica, we believe AI solutions aren't just a trend—they're the foundation of the next era of enterprise software. 
                 And we're here to help you lead that transformation with clarity, confidence, and speed.
               </p>
             </div>

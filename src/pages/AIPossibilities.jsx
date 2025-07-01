@@ -44,7 +44,7 @@ const useCases = [
     title: "KYC & Compliance Support Bot",
     industry: "Fintech",
     problem: "Manual onboarding and regulation compliance were slowing user acquisition.",
-    solution: "AI agents handle KYC document parsing and compliance FAQs.",
+    solution: "AI solutions handle KYC document parsing and compliance FAQs.",
     impact: "Onboarding time reduced by 50%; increased signups."
   },
   {

@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <SEO
         title="The Inceptica - On-Demand AI Experts & Custom AI Solutions"
-        description="Hire Inceptica's AI developers and architects to build scalable, intelligent AI agents for your business. Expert guidance in AI implementation and custom solutions."
+        description="Hire Inceptica's AI developers and architects to build scalable, intelligent AI solutions for your business. Expert guidance in AI implementation and custom solutions."
         name="The Inceptica"
         type="website"
       />
@@ -47,7 +47,7 @@ export default function Home() {
               >
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
                   <div className="bg-gradient-to-r from-white via-[#3B82F6] to-white text-transparent bg-clip-text whitespace-nowrap">On-Demand AI Experts.</div>
-                  <div className="bg-gradient-to-r from-white via-[#3B82F6] to-white text-transparent bg-clip-text">Crafting Tailored AI Agents.</div>
+                  <div className="bg-gradient-to-r from-white via-[#3B82F6] to-white text-transparent bg-clip-text">Crafting Tailored AI Solutions.</div>
                 </h1>
 
                 <div className="w-full max-w-[24rem] sm:max-w-[32rem] lg:max-w-[40rem] h-[1px] relative overflow-hidden my-6 mx-auto">
@@ -70,7 +70,7 @@ export default function Home() {
                 
                 <div className="space-y-8 mb-12">
                   <p className="text-lg bg-gradient-to-r from-[#3B82F6] via-white to-[#3B82F6] text-transparent bg-clip-text">
-                    Hire Inceptica's AI developers and architects to build scalable, intelligent AI agents for your business.
+                    Hire Inceptica's AI developers and architects to build scalable, intelligent AI solutions for your business.
                   </p>
                   <div className="relative max-w-4xl mx-auto">
                     <div className="flex justify-center gap-8 sm:gap-16 items-center text-lg sm:text-xl md:text-2xl">
@@ -213,7 +213,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }} 
               className="text-4xl font-bold text-white inline-block relative mb-4"
             >
-              AI Agent Integration
+              AI Solution Integration
               <motion.div 
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
@@ -222,7 +222,7 @@ export default function Home() {
               />
             </motion.h2>
             <p className="text-xl text-light/70 max-w-2xl mx-auto">
-              Powering AI agents with industry-leading language models and platforms
+              Powering AI solutions with industry-leading language models and platforms
             </p>
           </motion.div>
           <LLMLogos />

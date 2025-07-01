@@ -12,28 +12,28 @@ import {
 const steps = [
   {
     title: "Design & Planning",
-    description: "Blueprint your AI agent's architecture and capabilities",
+    description: "Blueprint your AI solution's architecture and capabilities",
     tools: ["LangChain", "LangGraph", "LangFlow"],
     icon: BeakerIcon,
     color: "from-blue-500/20 to-blue-600/20"
   },
   {
     title: "Development",
-    description: "Build robust and scalable AI agent systems",
+    description: "Build robust and scalable AI solution systems",
     tools: ["OpenAI", "Anthropic", "Mistral", "DeepSeek"],
     icon: WrenchIcon,
     color: "from-purple-500/20 to-purple-600/20"
   },
   {
     title: "Integration",
-    description: "Connect agents with data sources and systems",
+    description: "Connect solutions with data sources and systems",
     tools: ["LangSmith", "Supabase", "Browserbase", "exa"],
     icon: CpuChipIcon,
     color: "from-indigo-500/20 to-indigo-600/20"
   },
   {
     title: "Deployment",
-    description: "Deploy agents to production environments",
+    description: "Deploy solutions to production environments",
     tools: ["Composio", "Docker", "Kubernetes"],
     icon: CloudArrowUpIcon,
     color: "from-green-500/20 to-green-600/20"

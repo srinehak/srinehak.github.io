@@ -11,13 +11,13 @@ const technologies = {
       {
         id: "LC",
         name: "LangChain",
-        description: "Framework for building AI agents powered by LLMs,\nenabling structured workflows and seamless integrations.",
+        description: "Framework for building AI solutions powered by LLMs,\nenabling structured workflows and seamless integrations.",
         tag: "Popular"
       },
       {
         id: "LG",
         name: "LangGraph",
-        description: "Tool for designing structured AI agent workflows,\nsupporting advanced branching logic and dependencies."
+        description: "Tool for designing structured AI solution workflows,\nsupporting advanced branching logic and dependencies."
       },
       {
         id: "LS",
@@ -27,7 +27,7 @@ const technologies = {
       {
         id: "LM",
         name: "LangMem",
-        description: "Advanced memory management system for AI agents,\nensuring context persistence across workflow stages."
+        description: "Advanced memory management system for AI solutions,\nensuring context persistence across workflow stages."
       },
       {
         id: "LF",
@@ -37,13 +37,13 @@ const technologies = {
       {
         id: "CA",
         name: "CrewAI",
-        description: "Orchestrates multiple AI agents in collaborative teams,\ncoordinating them to solve complex business challenges.",
+        description: "Orchestrates multiple AI solutions in collaborative teams,\ncoordinating them to solve complex business challenges.",
         tag: "Trending"
       },
       {
         id: "AI",
         name: "agent.ai",
-        description: "Platform for creating and managing AI-powered agents,\nenhancing automation and decision-making processes."
+        description: "Platform for creating and managing AI-powered solutions,\nenhancing automation and decision-making processes."
       }
     ]
   },
@@ -198,7 +198,7 @@ const technologies = {
       {
         id: "MB",
         name: "Microsoft Bot Framework",
-        description: "Comprehensive suite of Microsoft's AI tools,\nfocused on developing and deploying conversational agents."
+        description: "Comprehensive suite of Microsoft's AI tools,\nfocused on developing and deploying conversational solutions."
       },
       {
         id: "WA",

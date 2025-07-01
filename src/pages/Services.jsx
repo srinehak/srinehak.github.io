@@ -91,7 +91,7 @@ export default function Services() {
     <>
       <SEO
         title="AI Services & Solutions - Custom AI Development | The Inceptica"
-        description="Transform your business with our enterprise AI solutions. From AI consulting and strategy to custom development and implementation. Expert guidance in building intelligent AI agents."
+        description="Transform your business with our enterprise AI solutions. From AI consulting and strategy to custom development and implementation. Expert guidance in building intelligent AI solutions."
         name="The Inceptica"
         type="website"
       />
